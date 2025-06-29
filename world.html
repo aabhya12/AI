@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Education</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url("https://www.digiexam.com/hs-fs/hubfs/Digiexam_AI%20in%20education_Illustration_v1.2.png?width=1920") no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .glass {
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 60px 40px;
+      max-width: 850px;
+      width: 90%;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 64px;
+      color: cyan;
+      margin-bottom: 20px;
+      text-shadow: 0 0 15px cyan;
+    }
+
+    p {
+      font-size: 22px;
+      color: #fff;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    button {
+      background: transparent;
+      color: cyan;
+      border: 2px solid cyan;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 15px 35px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      box-shadow: 0 0 15px cyan;
+    }
+
+    button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: cyan;
+      z-index: -1;
+      transition: all 0.4s ease;
+    }
+
+    button:hover {
+      color: black;
+      box-shadow: 0 0 30px cyan, 0 0 60px cyan;
+    }
+
+    button:hover::before {
+      left: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      button {
+        font-size: 16px;
+        padding: 12px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glass">
+    <h1>AI Education</h1>
+    <p>Explore the powerful features of AI transforming modern education. From personalized learning to smart chatbots — the future is now.</p>
+    <div class="button-group">
+      <button onclick="location.href='Machine Education.html'">Machine Learning</button>
+      <button onclick="location.href='Chatbot.html'">Chatbot</button>
+      <button onclick="location.href='yo.html'">Language Acquisition</button>
+      <button onclick="location.href='personalisation.html'">Personalisation</button>
+    </div>
+  </div>
+
+</body>
+</html>
